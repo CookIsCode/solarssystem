@@ -1,7 +1,7 @@
 CXX = g++
 EXEC = solarsystem
-SOURCES = main.cpp
-OBJECTS = main.o 
+SOURCES = main.cpp stars.cpp solarsystem.cpp
+OBJECTS = main.o  stars.o solarsystem.o
 LDFLAGS = -lglut -lGL -lGLU -std=c++11
 
 all :

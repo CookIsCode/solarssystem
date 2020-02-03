@@ -16,7 +16,7 @@ class Stars
         //父节点星球指针
         Stars* partenStar;
         Stars(GLfloat radius,GLfloat distance, 
-        GLfloat speed,GLfloat selfSpeed,Stars partenStar);
+        GLfloat speed,GLfloat selfSpeed,Stars* partenStar);
         ~Stars();
         void drawStar(void);
         virtual void draw(void);
@@ -30,7 +30,7 @@ class Planet :public Stars
     public:
     Planet(GLfloat radius,GLfloat distance, 
         GLfloat speed,GLfloat selfSpeed,
-        Stars* partenStar,GLfloat rgbaclour);
+        Stars* partenStar,GLfloat rgbaclour[3]);
    void drawPlanet(void);
    virtual void draw(void);
 };
